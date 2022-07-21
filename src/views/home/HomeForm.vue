@@ -42,7 +42,7 @@
             v-model="manualApiUrl"
             type="text"
             :disabled="isManualApi"
-            placeholder="示例：https://sub.ops.ci"
+            placeholder="Contoh：https://sub.ops.ci"
           />
         </div>
         <div
@@ -53,21 +53,21 @@
           <div class="col-12" style="text-align: center; padding-top: 30px">
             <input
               type="text"
-              :placeholder="'Include：可选'"
+              :placeholder="'Include：opsional'"
               v-model="moreConfig.include"
             />
           </div>
           <div class="col-12" style="text-align: center; padding-top: 20px">
             <input
               type="text"
-              :placeholder="'Exclude：可选'"
+              :placeholder="'Exclude：opsional'"
               v-model="moreConfig.exclude"
             />
           </div>
           <div class="col-12" style="text-align: center; padding-top: 20px">
             <input
               type="text"
-              :placeholder="'远程配置：可选'"
+              :placeholder="'Konfigurasi jarak jauh: opsional'"
               v-model="moreConfig.remoteconfig"
             />
           </div>
@@ -78,11 +78,11 @@
             <input type="checkbox" id="emoji" v-model="moreConfig.emoji" />
             <label for="emoji">Emoji</label>
             <input type="checkbox" id="udp" v-model="moreConfig.udp" />
-            <label for="udp">开启UDP</label>
+            <label for="udp">Aktifkan UDP</label>
             <input type="checkbox" id="sort" v-model="moreConfig.sort" />
-            <label for="sort">排序节点</label>
+            <label for="sort">Urutkan simpul</label>
             <input type="checkbox" id="scv" v-model="moreConfig.scv" />
-            <label for="scv">关闭证书检查</label>
+            <label for="scv">Matikan pemeriksaan sertifikat</label>
             <input type="checkbox" id="nodelist" v-model="moreConfig.list" />
             <label for="nodelist">Node List</label>
           </div>
@@ -93,13 +93,13 @@
         >
           <ul class="actions">
             <li>
-              <input type="button" value="订阅转换" @click="checkAll()" />
+              <input type="button" value="Konversi langganan" @click="checkAll()" />
             </li>
-            <!-- <li><input type="reset" value="重置内容" class="alt" /></li> -->
+            <!-- <li><input type="reset" value="setel ulang konten" class="alt" /></li> -->
             <li>
               <input
                 type="button"
-                value="可选参数"
+                value="parameter opsional"
                 class="alt"
                 @click="showMoreConfig()"
               />
@@ -110,7 +110,7 @@
           <input
             type="text"
             readOnly="true"
-            placeholder="点击订阅转换获取链接"
+            placeholder="Klik Berlangganan untuk Mengonversi Dapatkan Tautan"
             v-model.trim="returnUrl"
           />
         </div>
@@ -167,8 +167,8 @@ export default {
         buttonClass: '',
         inputValue: '',
         placeholder:
-          '多订阅链接或节点请确保每行一条\n支持手动使用"|"分割多链接或节点',
-      },
+          'Untuk beberapa tautan atau simpul langganan, pastikan satu tautan atau simpul per baris\nMendukung penggunaan manual "|" untuk membagi beberapa tautan atau simpul',
+       },
       targetType: 'clash',
       targetTypes: [
         { value: 'clash', text: 'Clash' },
