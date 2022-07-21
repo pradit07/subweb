@@ -1,7 +1,6 @@
 <template>
   <header>
-    <h2>订阅转换</h2>
-    <!-- <p>支持多机场订阅转换</p> -->
+    <h2>Subconverter</h2>
   </header>
 </template>
 
