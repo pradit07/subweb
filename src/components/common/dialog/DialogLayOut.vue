@@ -22,7 +22,7 @@ export default {
     },
     message: {
       type: String,
-      default: '这是一个封装好的弹窗组建',
+      default: 'Ini adalah komponen jendela pop-up yang dikemas',
     },
   },
 };
