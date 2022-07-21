@@ -3,14 +3,9 @@ window.config = {
   apiUrl: 'http://127.0.0.1:25500',
   menuItem: [
     {
-      title: '首页',
+      title: 'Halaman Depan',
       link: '/',
       target: '',
-    },
-    {
-      title: 'GitHub',
-      link: 'https://github.com/stilleshan/subweb',
-      target: '_blank',
-    },
+    }
   ],
 };
