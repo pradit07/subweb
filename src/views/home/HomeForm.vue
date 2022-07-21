@@ -42,7 +42,7 @@
             v-model="manualApiUrl"
             type="text"
             :disabled="isManualApi"
-            placeholder="Contoh：https://sub.ops.ci"
+            placeholder="https://sub.ops.ci"
           />
         </div>
         <div
